@@ -3,179 +3,174 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title><%: Page.Title %> - Indigenous Artisan Collective</title>
-    
+    <title><%: Page.Title %> - T'boli Dreamweavers Archive</title>
     <style>
-        /* Global Reset & Base Styles */
+        /* T'BOLI CORE PALETTE: #1A1A1A (Black), #7B160E (Red), #FAF3CD (Ecru/Cream) */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            color: #050505;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #FDFCF8;
+            color: #1A1A1A;
             min-height: 100vh;
         }
 
-        /* Layout Components */
+        /* MUSEUM NAVIGATION */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 60px;
-            background: #FAF3CD;
-            border-bottom: 1px solid #ddd;
+            padding: 30px 80px;
+            background: #1A1A1A; /* Black background for high-end feel */
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .logo-text {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
-            color: #6b4f3b;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #a05a2c;
-        }
-
-        /* Shared Page Elements */
-        .page-header-section {
-            background: #eee; 
-            width: 100%;
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        .page-header-section h1 {
-            font-size: 40px;
-            color: #7B160E; 
-            letter-spacing: 1.5px;
-            display: inline-block;
+            color: #FAF3CD;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
 
-        .page-header-section h1::after {
-            content: "";
-            display: block;
-            width: 120px;
-            height: 4px;
-            background: #7B160E;
-            margin: 10px auto;
-            border-radius: 2px;
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #FAF3CD;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
         }
 
-        section {
-            padding: 60px 80px;
-        }
+            nav a:hover {
+                color: #BD8232; /* Gold accent */
+            }
 
-        /* Heritage & Grid Components */
-        .section-intro {
+        /* SHARED PAGE HEADER */
+        .page-header-section {
+            background: #7B160E; /* Sacred Red */
+            color: #FAF3CD;
             text-align: center;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-            font-size: 18px;
+            padding: 100px 20px;
+            border-bottom: 8px solid #1A1A1A;
+        }
+
+            .page-header-section h1 {
+                font-size: 52px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            .page-header-section p {
+                font-style: italic;
+                font-size: 15px;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+        /* MUSEUM GRID */
+        section {
+            padding: 80px 10%;
         }
 
         .heritage-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            gap: 40px;
         }
 
         .heritage-card {
-            background: #F1EBD3; 
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
-            text-align: center;
-        }
-
-        .heritage-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
-        }
-
-        .heritage-card img {
-            width: 100%;
-            height: 245px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        /* Buttons & Content Boxes */
-        .process-section {
-            background-color: #FAF3CD;
-            border-top: 6px solid #7B160E;
-            margin: 40px 80px;
-            padding: 40px;
+            background: #FAF3CD;
+            padding: 15px;
+            border-top: 6px solid #8C0000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
             border-radius: 6px;
+            transition: all 0.4s ease;
+            position: relative;
         }
 
+            .heritage-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+
+            .heritage-card img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                filter: grayscale(20%);
+            }
+
+            .heritage-card h3 {
+                padding: 20px 20px 5px;
+                color: #7B160E;
+                font-size: 24px;
+            }
+
+            .heritage-card p {
+                padding: 0 20px 20px;
+                font-size: 15px;
+                color: #1A1A1A;
+            }
+
+        /* BUTTONS */
         .btn-read {
             display: inline-block;
-            padding: 10px 20px;
-            background: #FFC917; 
-            color: black;
+            padding: 12px 30px;
+            background: #1A1A1A;
+            color: #FAF3CD;
+            border-radius:4px;
             text-decoration: none;
-            border-radius: 4px;
             font-weight: bold;
             text-transform: uppercase;
-            margin-top: 15px;
+            letter-spacing: 1px;
+            font-size: 12px;
             transition: 0.3s;
         }
 
-        .btn-read:hover {
-            background: #CD8417;
-            color: white;
-        }
+            .btn-read:hover {
+                background: #7B160E;
+            }
 
         footer {
-            background: #050505;
+            background: #1A1A1A;
             color: #FAF3CD;
             text-align: center;
-            padding: 40px;
-            margin-top: 40px;
+            padding: 60px;
+            margin-top: 80px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <header>
-            <div class="logo-text">Indigenous Artisan Collective</div>
+            <div class="logo-text" style="font-family: 'Garamond', 'Georgia', sans-serif;">T'boli Dreamweavers Collective</div>
             <nav>
                 <a href="Home.aspx">Home</a>
                 <a href="OurArtisans.aspx">Our Artisans</a>
-                <a href="shop.aspx">Shop + The Craft</a>
-                <a href="CulturalHeritage.aspx">Cultural Heritage</a>
+                <a href="shop.aspx">The Craft</a>
+                <a href="CulturalHeritage.aspx">Heritage</a>
                 <a href="Stories.aspx">Stories</a>
             </nav>
         </header>
-        
+
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
 
-        <footer>
+        <footer style="font-family: 'Segoe UI', Tahoma, sans-serif; margin-bottom: 20px;">
             <h3>Contact Us</h3>
-            <p>Email: artisans@email.com</p>
-            <p>Phone: +63 912 345 6789</p>
-            <p>Location: Philippines</p>
-            <p>© 2026 Indigenous Artisan Collective</p>
+            <p>Email: artisans@email.com | Phone: +63 912 345 6789</p>
+            <p>Lake Sebu, South Cotabato, Philippines</p>
+            <p>© 2026 T'boli Dreamweavers Collective</p>
         </footer>
     </form>
 </body>
