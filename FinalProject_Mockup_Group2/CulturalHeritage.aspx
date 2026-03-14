@@ -7,7 +7,7 @@
         <p>"The T'nalak is not just cloth; it is the physical manifestation of a dream bestowed by Fu Dalu, the Spirit of the Abaca."</p>
     </div>
 
-    <section style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap; background: #FFF; padding: 60px;">
+    <section style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap; padding: 60px;">
         <div style="flex: 1; min-width: 300px;">
             <img src="images/fu-dalu-spirit.jpg" style="width: 100%; border: 1px solid #1A1A1A; padding: 10px;" alt="The Weaver's Loom" />
         </div>
@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section style="background: #F4F4F4;">
+    <section>
         <h2 style="text-align: center; letter-spacing: 4px; margin-bottom: 60px;">CORE PATTERN</h2>
         
         <div class="heritage-grid">
