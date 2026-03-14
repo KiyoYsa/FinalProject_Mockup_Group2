@@ -60,7 +60,7 @@
             background: #7B160E; /* Sacred Red */
             color: #FAF3CD;
             text-align: center;
-            padding: 100px 20px;
+            padding: 50px 20px;
             border-bottom: 8px solid #1A1A1A;
         }
 
@@ -201,8 +201,8 @@
             <nav>
                 <a href="Home.aspx">Home</a>
                 <a href="OurArtisans.aspx">Our Artisans</a>
-                <a href="shop.aspx">The Craft</a>
-                <a href="CulturalHeritage.aspx">Heritage</a>
+                <a href="shop.aspx">Crafts + Shop</a>
+                <a href="CulturalHeritage.aspx">Cultural Heritage</a>
                 <a href="Stories.aspx">Stories</a>
             </nav>
         </header>

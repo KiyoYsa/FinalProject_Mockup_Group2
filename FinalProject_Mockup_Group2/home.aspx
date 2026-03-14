@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="FinalProject_Mockup_Group2.home" MasterPageFile="~/Site.Master" %>
+﻿<%@ Page Title="Home" Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="FinalProject_Mockup_Group2.home" MasterPageFile="~/Site.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -33,7 +33,7 @@
 
             <div class="heritage-card home-grid-card">
                 <img src="images/craft.jpg" alt="Craft">
-                <h3 style="font-size: 1.2rem;">Shop + The Craft</h3>
+                <h3 style="font-size: 1.2rem;">Crafts + Shop</h3>
                 <p>Discover traditional T'nalak weaving.</p>
                 <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Crafts</a></div>
             </div>

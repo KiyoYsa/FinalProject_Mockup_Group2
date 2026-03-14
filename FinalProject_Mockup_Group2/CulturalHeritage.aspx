@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main>
     <div class="page-header-section">
-        <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">Sacred T'nalak</h1>
+        <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">Cultural Heritage</h1>
         <p>"The T'nalak is not just cloth; it is the physical manifestation of a dream bestowed by Fu Dalu, the Spirit of the Abaca."</p>
     </div>
 

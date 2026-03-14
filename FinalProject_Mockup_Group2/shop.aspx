@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="shop.aspx.cs" Inherits="FinalProject_Mockup_Group2.shop" MasterPageFile="~/Site.Master"%>
+﻿<%@ Page Title="Crafts + Shop" Language="C#" AutoEventWireup="true" CodeBehind="shop.aspx.cs" Inherits="FinalProject_Mockup_Group2.shop" MasterPageFile="~/Site.Master"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
