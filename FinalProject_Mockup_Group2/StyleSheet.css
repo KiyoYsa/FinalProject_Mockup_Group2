@@ -264,34 +264,36 @@ section {
 
 /* STORIES STYLESHEET*/
 
+.story-sec-header {
+    background-color: #7B160E;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 10px solid black;
+}
+
+.story-sec-header h1 {
+    font-size: 52px;
+    font-family: 'Garamond', Georgia, serif;
+    letter-spacing: 6px;
+    color: #FAF3CD;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform:uppercase;
+}
+
+.story-page-desc {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #FAF3CD;
+    font-style: italic;
+}
+
+
 .container {
+    padding: 20px;
     width: 80%;
     margin: auto;
-}
-
-.container h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #7B160E;
-    letter-spacing: 1.5px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-}
-
-    .container h1::after {
-        content: "";
-        display: block;
-        width: 120px;
-        height: 4px;
-        background: #7B160E;
-        margin: 10px auto;
-        border-radius: 2px;
-    }
-
-
-.subtitle {
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 /* MAIN STORY */
@@ -351,15 +353,16 @@ section {
 
 .read {
     display: inline-block;
-    padding: 10px 25px;
-    background: #FFC917;
-    color: #050505;
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #FAF3CD;
+    border-radius: 4px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 1px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.3s;
 }
 
     .read:hover {

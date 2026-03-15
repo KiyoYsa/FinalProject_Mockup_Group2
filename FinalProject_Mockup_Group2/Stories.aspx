@@ -2,15 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container">
+   
+    <div class="story-sec-header">
+    <h1>Stories</h1>
+    <p class ="story-page-desc">"Through stories and shared experiences, traditions and cultural heritage are preserved and passed on to future generations."</p>
+   </div>
 
-    <h1 >Stories & Blog</h1>
-
-    <p class="subtitle">
-    Stories from the Ifugao community, sharing traditions, culture, and heritage.
-    </p>
-
-    <!-- MAIN STORY -->
+<div class="container">
+        <!-- MAIN STORY -->
 
     <div class="featured">
 
