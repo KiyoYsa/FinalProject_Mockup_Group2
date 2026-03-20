@@ -5,7 +5,7 @@
    
     <div class="page-header-section">
     <h1>Stories</h1>
-    <p>"Through stories and shared experiences, traditions and cultural heritage are preserved and passed on to future generations."</p>
+    <p>Discover the inspiring lives of T'boli women and the colorful festivities that honor their heritage. These stories honor tradition, dedication, and community, ranging from daily living to t'nalak-woven dreams.</p>
    </div>
 
 <div class="container">
@@ -15,16 +15,15 @@
 
         <img src="images/pic1.png" />
 
-        <h3>Featured Story </h3>
+        <h3>How the T'boli women weave their dreams </h3>
 
         <p>
-        This space will contain a short description or summary of the blog post.
-        It will highlight the main idea of the story and encourage readers to 
-        continue reading the full article.
+        What if dreams could be woven into something you can touch? Among the T’boli, chosen women transform visions from their sleep into sacred t’nalak—each pattern carrying stories of spirit, ancestry, and identity. 
+        Step into a world where every thread holds a dream waiting to be discovered.
         </p>
 
-        <a class="btn-read">
-        Read Full Story
+       <a class="btn-read" href="https://fameplus.com/touchpoint/how-the-tboli-women-weave-their-dreams" target="_blank">
+        Read the full Story
         </a>
 
     </div>
@@ -39,16 +38,16 @@
         <div class="storiescard">
             <img src="images/pic1.png" />
 
-            <h3>Story / Blog 1</h3>
+            <h3>A girl's journey to school</h3>
 
             <p>
-            This space will contain a short description or summary of the blog post.
-            It will highlight the main idea of the story and encourage readers to 
-            continue reading the full article.
+           Before the first lesson even begins, her journey has already tested her strength. 
+           Through rivers, rough paths, and long miles, a young T’boli girl pushes forward—driven by a quiet dream of learning. 
+           Follow her story and see how far hope can carry her.
             </p>
 
-            <a class="btn-read">
-            Read More
+            <a class="btn-read" href="https://www.savethechildren.org.ph/our-work/our-stories/story/watch-a-tboli-girls-journey-to-school/" target="_blank">
+            Read the full Story
             </a>
 
         </div>
@@ -57,15 +56,15 @@
         <div class="storiescard">
             <img src="images/pic2.png" />
 
-            <h3>Story / Blog 2</h3>
+            <h3>Hilltop Legacy in Lake Sebu</h3>
 
             <p>
-            This space will contain a short description or summary of the blog post.
-            It will highlight the main idea of the story and encourage readers to 
-            continue reading the full article.
+             What does it take to turn a simple home into a legacy? 
+             In the heart of Lake Sebu, one woman’s vision and resilience helped shape a community and preserve T’boli culture.
+            Step into her story and see how one life can inspire many.
             </p>
 
-            <a class="btn-read">
+            <a class="btn-read" href="https://www.philstar.com/lifestyle/travel-and-tourism/2026/01/18/2501837/hilltop-legacy-how-one-woman-helped-shape-lake-sebus-story" target="_blank">
             Read More
             </a>
 
@@ -75,15 +74,14 @@
         <div class="storiescard">
             <img src="images/pic3.png" />
 
-            <h3>Story / Blog 3</h3>
+            <h3>A T'boli Women's Journey</h3>
 
             <p>
-            This space will contain a short description or summary of the blog post.
-            It will highlight the main idea of the story and encourage readers to 
-            continue reading the full article.
+            Before the sun rises, she is already on her way through mountains, rivers, and long lengths of road, carrying a small desire of education. 
+            Every step reveals a story of bravery, hope, and determination. Discover her strength behind her journey.
             </p>
 
-            <a class="btn-read">
+            <a class="btn-read" href="https://sesotunawa.com/blogs/stories/a-tboli-womans-journey" target="_blank">
             Read More
             </a>
 
@@ -93,50 +91,52 @@
 
 </div>
 
-    <section class="myths-strip">
-    <h2>T’boli Myths & Legends</h2>
-    <p class="subtitle">Stories passed down through generations, carrying the dreams and beliefs of the T’boli people.</p>
-
-    <!-- Myth 1 -->
-    <div class="strip strip-1">
+    <section class="celeb-strip">
+    <h2>T’boli Festival and Celebrations</h2>
+    <p class="subtitle">A vibrant glimpse into the dances, music, and traditions that bring T’boli culture to life</p>
+           
+    <div class="stripstrip-1">
         <div class="image">
-            <img src="images/myth1.png" alt="Legend of Fu Dalu">
+            <img src="" alt="">
         </div>
         <div class="text">
-            <h3>The Legend of Fu Dalu</h3>
-            <p>Fu Dalu guides T’nalak dream weavers. Each design comes directly from dreams passed down through generations.</p>
+            <h3>Seslong Festival</h3>
+            <p>TThe Seslong Festival is the T’boli’s most vibrant celebration, bringing heritage to life through colorful dances, music, chants, and traditional crafts. “Seslong,” meaning marketplace or gathering, symbolizes the unity of the T’boli and neighboring tribes while marking a time of community, tradition, and joy.</p>
             <a class="btn-read" href="#">Read More</a>
         </div>
     </div>
 
-    <!-- Myth 2 -->
+
     <div class="strip strip-2">
         <div class="text">
-            <h3>The Story of Lake Sebu</h3>
-            <p>A tale of how the T’boli people were guided by spirits to settle near Lake Sebu, preserving harmony with nature and tradition.</p>
-            <a class="btn-read" href="#">Read More</a>
+            <h3>Lemlunay Festival</h3>
+            <p>At Lake Sebu, the T’boli celebrate "Lemlunay" or "Good Land," to mark the beginning of the harvest season. Through vibrant songs, dances, and intricate crafts, the community honors its roots and keeps traditions alive.</p>
+            <a class="btn-read" href="https://dosjfm.com/2022/09/lemlunay-tboli-tribal-festival">Read More</a>
         </div>
         <div class="image">
-            <img src="images/myth2.png" alt="The Story of Lake Sebu">
+            <img src="" alt="">
         </div>
     </div>
 
-    <!-- Myth 3 -->
+            
     <div class="strip strip-1">
         <div class="image">
-            <img src="images/myth3.png" alt="The Dream of Princess Alon">
+            <img src="" alt="">
         </div>
         <div class="text">
-            <h3>The Dream of Princess Alon</h3>
-            <p>The story of a princess whose dream inspired the first T’nalak patterns, shaping the spiritual and cultural identity of the T’boli community.</p>
-            <a class="btn-read" href="#">Read More</a>
+            <h3>The Tnalak Festival</h3>
+            <p>The town of Lake Sebu honors the sacred t'nalak fabric with a week-long event that is full of color, music, and dance every year. Men and women parade in traditional clothing, displaying designs that convey tales of pride, dreams, and ancestry.</p>
+            <a class="btn-read" href="https://sites.google.com/addu.edu.ph/tnalakfestival/home">Read More</a>
         </div>
     </div>
+
+
+    
 
 </section>
 
 <style>
-.myths-strip{
+.celeb-strip{
     width: 100%;
     margin: 75px 0px;
     padding: 50px 50px;
@@ -147,13 +147,13 @@
 
 }
 
-.myths-strip h2{
+.celeb-strip h2{
     text-align: center;
     color: #8C0000;
     margin-bottom: 10px;
 }
 
-.myths-strip .subtitle{
+.celeb-strip .subtitle{
     text-align: center;
     margin-bottom: 40px;
     color: #333;
