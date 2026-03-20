@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject_Mockup_Group2", "FinalProject_Mockup_Group2\FinalProject_Mockup_Group2.csproj", "{5E92016E-8F79-4D80-BC42-E69EB38FC024}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Dreamweavers.Database", "Dreamweavers.Database\Dreamweavers.Database.sqlproj", "{E3C2D2F1-EF73-4E70-94F6-4D6571EBE955}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Dreamweavers_Collective", "Dreamweavers.Database\Dreamweavers_Collective.sqlproj", "{E3C2D2F1-EF73-4E70-94F6-4D6571EBE955}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
