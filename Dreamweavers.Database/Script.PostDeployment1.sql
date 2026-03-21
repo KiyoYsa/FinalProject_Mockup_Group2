@@ -51,3 +51,35 @@ WHEN NOT MATCHED THEN
     VALUES (source.ArtisanID, source.ArtisanName, source.ArtisanBio, source.ArtisanLocation, source.ProfileImageURL);
 
 SET IDENTITY_INSERT Artisans OFF;
+
+
+/* */
+
+MERGE INTO Patterns AS Target
+USING (VALUES 
+    ('Kafi (Frog)', 
+     'Symbol of Life & Rain', 
+     'In T’boli culture, the Kafi is a sacred herald of the rainy season. Its song signals the arrival of life-giving water to the abaca plantations of Lake Sebu. Weaving this pattern is a prayer for abundance and a tribute to the natural cycles that sustain the community.'),
+
+    ('Sigul (Snake)', 
+     'Symbol of Protection', 
+     'Mirroring the zig-zag mountain paths of South Cotabato, the Sigul represents the protection of the ancestors. Historically, these textiles were worn by travelers and warriors to ward off malevolent spirits (Busao) during journeys through the deep highlands.'),
+
+    ('Kleng (Crab)', 
+     'Symbol of Family Unity', 
+     'The Kleng is an intricate, interlocking design representing the inseparable ties of the T’boli family unit. It symbolizes resilience and the ability to navigate different worlds—moving between the lake and the land while remaining rooted in tradition.') 
+) 
+AS Source (PatternName, SpiritualMeaning, History)
+ON Target.PatternName = Source.PatternName
+
+WHEN MATCHED THEN
+    UPDATE SET 
+        SpiritualMeaning = Source.SpiritualMeaning,
+        History = Source.History
+
+WHEN NOT MATCHED BY TARGET THEN
+    INSERT (PatternName, SpiritualMeaning, History)
+    VALUES (Source.PatternName, Source.SpiritualMeaning, Source.History)
+
+WHEN NOT MATCHED BY SOURCE THEN
+    DELETE;
