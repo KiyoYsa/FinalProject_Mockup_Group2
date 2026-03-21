@@ -53,7 +53,7 @@ WHEN NOT MATCHED THEN
 SET IDENTITY_INSERT Artisans OFF;
 
 
-/* */
+/* for patterns db*/
 
 MERGE INTO Patterns AS Target
 USING (VALUES 
@@ -83,3 +83,33 @@ WHEN NOT MATCHED BY TARGET THEN
 
 WHEN NOT MATCHED BY SOURCE THEN
     DELETE;
+
+
+/* for users db*/
+SET IDENTITY_INSERT Users ON;
+
+MERGE INTO Users AS target
+USING (VALUES
+    (1, 1, 'lang_dulay', 'TnalakMaster123', 'Admin'),      -- Lang Dulay (Admin/Legacy)
+    (2, 2, 'maria_todi', 'SLT_LakeSebu', 'Dreamweaver'),   -- Maria Oyog Todi
+    (3, 3, 'barbara_ofong', 'Dreamweaver90', 'Dreamweaver'),-- Barbara Kibed Ofong
+    (4, NULL, 'test_admin', 'TestAdmin', 'Admin')      -- Test Admin account
+) AS source (UserID, ArtisanID, Username, [Password], [Role])
+
+ON target.UserID = source.UserID
+
+WHEN MATCHED THEN
+    UPDATE SET
+        ArtisanID = source.ArtisanID,
+        Username = source.Username,
+        [Password] = source.Password,
+        [Role] = source.[Role]
+
+WHEN NOT MATCHED THEN
+    INSERT (UserID, ArtisanID, Username, [Password], [Role])
+    VALUES (source.UserID, source.ArtisanID, source.Username, source.Password, source.Role)
+
+WHEN NOT MATCHED BY SOURCE THEN
+    DELETE;
+
+SET IDENTITY_INSERT Users OFF;

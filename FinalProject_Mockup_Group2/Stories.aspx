@@ -95,7 +95,7 @@
     <h2>T’boli Festival and Celebrations</h2>
     <p class="subtitle">A vibrant glimpse into the dances, music, and traditions that bring T’boli culture to life</p>
            
-    <div class="stripstrip-1">
+    <div class="strip strip-1">
         <div class="image">
             <img src="" alt="">
         </div>
@@ -104,6 +104,7 @@
             <p>TThe Seslong Festival is the T’boli’s most vibrant celebration, bringing heritage to life through colorful dances, music, chants, and traditional crafts. “Seslong,” meaning marketplace or gathering, symbolizes the unity of the T’boli and neighboring tribes while marking a time of community, tradition, and joy.</p>
             <a class="btn-read" href="#">Read More</a>
         </div>
+        
     </div>
 
 
@@ -131,115 +132,7 @@
     </div>
 
 
-    
-
 </section>
 
-<style>
-.celeb-strip{
-    width: 100%;
-    margin: 75px 0px;
-    padding: 50px 50px;
-    background:#FFFEE0;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
 
-}
-
-.celeb-strip h2{
-    text-align: center;
-    color: #8C0000;
-    margin-bottom: 10px;
-}
-
-.celeb-strip .subtitle{
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-/* STRIPS */
-.strip{
-    width:85%;
-    background-color: #ffffff00;
-    display: flex;
-    align-items: center;
-    padding:40px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 7px solid;
-    color: #333;
-}
-
-.strip-1{
-    border-color: #8C0000;
-    flex-direction: row;
-}
-
-.strip-2{
-    border-color: #FFC917;
-    flex-direction: row-reverse;
-}
-
-/* Images */
-.strip .image{
-    flex: 1;
-    padding: 10px;
-}
-
-.strip .image img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-/* Text */
-.strip .text{
-    flex: 1;
-    padding: 10px 30px;
-}
-
-.strip h3{
-    color: #8C0000;
-    margin-bottom: 15px;
-}
-
-.strip p{
-    margin-bottom: 20px;
-}
-
-/* Read More button */
-.strip .read{
-    display: inline-block;
-    padding: 8px 14px;
-    background: #8C0000;
-    color: #FAF3CD;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.2s;
-}
-
-.strip .read:hover{
-    background: #CD8417;
-    color: white;
-}
-
-/* Responsive */
-@media (max-width: 1024px){
-    .strip{
-        flex-direction: column !important;
-        text-align: center;
-    }
-    .strip .text{
-        padding: 20px 0;
-    }
-    .strip .image{
-        padding: 0;
-    }
-}
-</style>
 </asp:Content>
