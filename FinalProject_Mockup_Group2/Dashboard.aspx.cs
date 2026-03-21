@@ -30,7 +30,36 @@ namespace FinalProject_Mockup_Group2
         {
             string tab = ViewState["ActiveTab"].ToString();
             litTabHeader.Text = tab;
-            litAddLabel.Text = (tab == "MyCrafts") ? "Craft" : tab.TrimEnd('s');
+            //litAddLabel.Text = (tab == "MyCrafts") ? "Craft" : tab.TrimEnd('s');
+            string label;
+
+            switch (tab)
+            {
+                case "MyCrafts":
+                case "Crafts":
+                    label = "Craft";
+                    break;
+                case "Artisans":
+                    label = "Artisan";
+                    break;
+                case "Categories":
+                    label = "Category";
+                    break;
+                case "Patterns":
+                    label = "Pattern";
+                    break;
+                case "Users":
+                    label = "User";
+                    break;
+                default:
+                    label = tab;
+                    break;
+            }
+
+            litAddLabel.Text = label;
+            btnadd1.Text = "Add " + label;
+            btnadd.Text = "Add " + label;
+            btnadd2.Text = "Add " + label;
 
             // Set the correct Add Form view
             if (tab == "Crafts" || tab == "MyCrafts") mvAddForms.SetActiveView(vwAddCraft);
@@ -39,6 +68,7 @@ namespace FinalProject_Mockup_Group2
 
             string sql = (tab == "MyCrafts") ? "SELECT CraftID, CraftName, CraftDesc, Status FROM Crafts WHERE ArtisanID = @aid" : $"SELECT * FROM {tab}";
 
+           
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
