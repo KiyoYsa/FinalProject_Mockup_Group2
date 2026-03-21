@@ -35,7 +35,7 @@ USING (VALUES
      'https://outoftownblog.com/wp-content/uploads/2025/03/Barbara-Ofoing-showing-her-creations-700x933.jpg'
     )
 
-) AS source (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL)
+) AS source (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImage)
 
 ON target.ArtisanID = source.ArtisanID
 
@@ -44,11 +44,11 @@ WHEN MATCHED THEN
         ArtisanName = source.ArtisanName,
         ArtisanBio = source.ArtisanBio,
         ArtisanLocation = source.ArtisanLocation,
-        ProfileImageURL = source.ProfileImageURL
+        ProfileImage = source.ProfileImage
 
 WHEN NOT MATCHED THEN
-    INSERT (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL)
-    VALUES (source.ArtisanID, source.ArtisanName, source.ArtisanBio, source.ArtisanLocation, source.ProfileImageURL);
+    INSERT (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImage)
+    VALUES (source.ArtisanID, source.ArtisanName, source.ArtisanBio, source.ArtisanLocation, source.ProfileImage);
 
 SET IDENTITY_INSERT Artisans OFF;
 
