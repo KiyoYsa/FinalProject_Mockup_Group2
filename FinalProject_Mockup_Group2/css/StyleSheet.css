@@ -136,18 +136,6 @@ header {
         margin: 0 auto;
     }
 
-.parallax-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    background-image: url('images/tboli.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* behind text */
-}
-
 /*SHARED BUTTONS*/
 .btn-read, .btn-read:visited {
     display: inline-block;
@@ -189,27 +177,30 @@ footer {
 }
 
 /*HOME SECTION*/
-.hero-content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: #8C0000;
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #8C0000;
+    color: white;
 }
 
-    .hero-content h1 {
-        font-family: 'Garamond', 'Georgia', serif;
-        font-size: 48px;
+    .hero img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .hero h1 {
+        font-size: 40px;
         margin-bottom: 20px;
     }
 
-    .hero-content p {
-        font-size: 20px;
-        color: #333;
-        line-height: 1.6;
+    .hero p {
+        max-width: 650px;
+        margin: auto;
+        margin-bottom: 25px;
     }
+
 
 .cta {
     text-align: center;
@@ -1040,4 +1031,5 @@ section {
         display: block;
     }
 
+ /*================MOBILE RESPONSIVE*=====================*/
 
