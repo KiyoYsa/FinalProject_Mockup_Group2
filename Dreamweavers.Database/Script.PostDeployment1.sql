@@ -134,13 +134,51 @@ SET IDENTITY_INSERT Users OFF;
 /* for crafts db*/
 MERGE INTO Crafts AS target
 USING (VALUES
-    (1, 1, 2, 'Bed Klagan Dark Red', 'Handwoven T’nalak in dark red.', 'Queen Size', 'Available', 'images/bed_klagan_darkred.jpg'),
-    (1, 2, 2, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'Queen Size', 'Available', 'images/bed_duon_blue.jpg'),
-    (2, 3, 3, 'Handwoven Malong - Black and Gold', 'Traditional woven garment in black and gold.', 'Single Size', 'Available', 'images/malong_black_gold.jpg'),
-    (2, 1, 3, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'Single Size', 'Available', 'images/malong_gold_fuchsia.jpg'),
-    (3, 2, 4, 'Heritage Poncho', 'Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.', 'Medium', 'Available', 'images/heritage_poncho.jpg')
+-- CLOTH (CategoryID = 2)
+(1, 1, 2, 'Bed Klagan Dark Red', 'Handwoven T’nalak in dark red.', 'Queen Size', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print2.png'),
+
+(1, 1, 2, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'Queen Size', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print4-.png'),
+
+(1, 1, 2, 'Bed Duon Blata Dark Rust', 'Handwoven T’nalak in light and dark rust.', 'Queen Size', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print6-.png'),
+
+(1, 1, 2, 'Bed Klagan Dark Yellow/Light Yellow/Natural', 'Handwoven T’nalak in light and dark yellow.', 'Queen Size', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print7.png'),
+
+-- MALONG (CategoryID = 3)
+(2, 2, 3, 'Handwoven Malong - Black and Gold', 'Traditional woven garment in black and gold.', 'Single Size', 'Available', 'https://narrastudio.com/cdn/shop/files/DSCF8477.jpg?v=1772860763&width=750'),
+
+(2, 2, 3, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'Single Size', 'Available', 'https://narrastudio.com/cdn/shop/files/DSCF8527.jpg?v=1772775577&width=750'),
+
+(2, 2, 3, 'Handwoven Malong - Purple', 'Traditional woven garment in purple.', 'Single Size', 'Available', 'https://narrastudio.com/cdn/shop/files/DSCF8408.jpg?v=1772860900&width=750'),
+
+(2, 2, 3, 'Handwoven Malong - Golden Orange', 'Traditional woven garment in golden orange.', 'Single Size', 'Available', 'https://narrastudio.com/cdn/shop/files/DSCF8434.jpg?v=1772860874&width=750'),
+
+-- CLOTHING (CategoryID = 4)
+(3, 3, 4, 'Heritage Poncho', 'Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.', 'Medium', 'Available', 'https://pinas-sadya.com/cdn/shop/files/Pinas_Sadya_0547_2_0e448b5b-d36f-4e96-9765-cfb503510538.jpg?v=1745384929&width=823'),
+
+(3, 3, 4, 'Oldrose Top in Tnalak Cotton', 'Cotton T’nalak top in old rose with traditional Filipino patterns, soft and practical for everyday wear.', 'Medium', 'Available', 'https://pinas-sadya.com/cdn/shop/files/012-8461.jpg?v=1756951948&width=823'),
+
+(3, 3, 4, 'Modern Filipiniana Black Tnalak', 'T’nalak wrap-around top in gray and off-white stripes made from premium abaca.', 'Medium', 'Available', 'https://pinas-sadya.com/cdn/shop/files/1_595dae4d-7852-4fe3-b23d-4e9cfee38203.jpg?v=1720965887&width=823'),
+
+-- BAGS (CategoryID = 5)
+(2, 2, 5, 'Tnalak Tote Bag with Kalinga Straps', 'T’nalak tote bag with Kalinga-style straps.', 'Standard', 'Available', 'https://pinas-sadya.com/cdn/shop/files/012-7582.jpg?v=1756965973&width=823'),
+
+(2, 2, 5, 'Manila Tote Bag with Black Tnalak', 'T’nalak tote bag inspired by Filipino traditions.', 'Standard', 'Available', 'https://pinas-sadya.com/cdn/shop/files/012-7536.jpg?v=1756966070&width=823'),
+
+(2, 2, 5, 'Kalinga Tote Bag in Bagobo Tnalak Weave', 'T’nalak bag with Langkit handle and denim canvas.', 'Standard', 'Available', 'https://pinas-sadya.com/cdn/shop/files/672A6117_1.jpg?v=1707394636&width=823'),
+
+-- HOME (CategoryID = 6)
+(1, 1, 6, 'Cushion River Design Pillowcase', 'T’nalak River Design cushion cover.', 'Standard', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/CUSHION-RIVER-DESIGN.png'),
+
+(1, 1, 6, 'Maranao Crown Light Grey with Black Coco', 'T’nalak Maranao Crown cushion cover.', 'Standard', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/Cushion-Cover-maranao-Crown-Light-Grey-with-black-coco.png'),
+
+(1, 1, 6, 'Stool T’nalak Traditional Ikat Blue', 'T’nalak stool with Ikat pattern in blue.', 'Standard', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/stool-tnalak-ikat-blue.png'),
+
+(1, 1, 6, 'Stool T’nalak Traditional Ikat Brown', 'T’nalak stool with Ikat pattern in brown.', 'Standard', 'Available', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/stool-tnalak-ikat-brown.png')
+
 ) AS source (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
+
 ON target.CraftName = source.CraftName
+
 WHEN MATCHED THEN
     UPDATE SET 
         ArtisanID = source.ArtisanID,
@@ -150,6 +188,7 @@ WHEN MATCHED THEN
         CraftDimension = source.CraftDimension,
         [Status] = source.[Status],
         Thumbnail = source.Thumbnail
+
 WHEN NOT MATCHED THEN
     INSERT (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
     VALUES (source.ArtisanID, source.PatternID, source.CategoryID, source.CraftName, source.CraftDesc, source.CraftDimension, source.[Status], source.Thumbnail);
