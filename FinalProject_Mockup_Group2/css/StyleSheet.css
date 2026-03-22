@@ -23,6 +23,11 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
 
 header {
     display: flex;

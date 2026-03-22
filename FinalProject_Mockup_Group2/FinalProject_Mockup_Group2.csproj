@@ -121,6 +121,7 @@
     <Content Include="images\festivals.jpg" />
     <Content Include="images\gamaba.jpg" />
     <Content Include="images\global.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="images\unesco.jpg" />
     <Content Include="images\eye_icon.svg" />
     <Content Include="images\helobung festival.jpg" />
@@ -145,6 +146,7 @@
     <Content Include="images\tembong.jpg" />
     <Content Include="images\temogo.jpg" />
     <Content Include="images\tnalak festival.jpg" />
+    <Content Include="images\updatedlogo.png" />
     <Content Include="OurArtisans.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

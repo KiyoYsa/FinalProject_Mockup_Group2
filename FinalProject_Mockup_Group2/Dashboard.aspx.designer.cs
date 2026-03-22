@@ -195,24 +195,6 @@ namespace FinalProject_Mockup_Group2
         protected global::System.Web.UI.WebControls.TextBox txtPHistory;
 
         /// <summary>
-        /// vwAddCategory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.View vwAddCategory;
-
-        /// <summary>
-        /// txtCatName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCatName;
-
-        /// <summary>
         /// vwAddUsers control.
         /// </summary>
         /// <remarks>
@@ -275,14 +257,6 @@ namespace FinalProject_Mockup_Group2
         /// </remarks>
         protected global::System.Web.UI.WebControls.View vwAddUser;
 
-        /// <summary>
-        /// txtUName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUName;
 
         /// <summary>
         /// txtUPass control.
