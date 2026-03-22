@@ -30,7 +30,7 @@ namespace FinalProject_Mockup_Group2
         {
             string tab = ViewState["ActiveTab"].ToString();
             litTabHeader.Text = tab;
-            //litAddLabel.Text = (tab == "MyCrafts") ? "Craft" : tab.TrimEnd('s');
+            /*litAddLabel.Text = (tab == "MyCrafts") ? "Craft" : tab.TrimEnd('s');
             string label;
 
             switch (tab)
@@ -59,14 +59,15 @@ namespace FinalProject_Mockup_Group2
             litAddLabel.Text = label;
             btnadd1.Text = "Add " + label;
             btnadd.Text = "Add " + label;
-            btnadd2.Text = "Add " + label;
+            btnadd2.Text = "Add " + label;*/
 
             // Set the correct Add Form view
             if (tab == "Crafts" || tab == "MyCrafts") mvAddForms.SetActiveView(vwAddCraft);
             else if (tab == "Artisans") mvAddForms.SetActiveView(vwAddArtisan);
             else if (tab == "Patterns") mvAddForms.SetActiveView(vwAddPattern);
-
-            string sql = (tab == "MyCrafts") ? "SELECT CraftID, CraftName, CraftDesc, Status FROM Crafts WHERE ArtisanID = @aid" : $"SELECT * FROM {tab}";
+            else if (tab == "Categories") mvAddForms.SetActiveView(vwAddCategory);
+            else if (tab == "Users") mvAddForms.SetActiveView(vwAddUsers);
+                string sql = (tab == "MyCrafts") ? "SELECT CraftID, CraftName, CraftDesc, Status FROM Crafts WHERE ArtisanID = @aid" : $"SELECT * FROM {tab}";
 
            
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -103,12 +104,23 @@ namespace FinalProject_Mockup_Group2
                 txtPName.Text, txtPSym.Text, null, null);
         }
 
+        protected void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            ExecuteInsert("INSERT INTO Categories (CategoryName) VALUES (@v1)" , txtCatName.Text, null, null, null);
+        }
+
+        protected void btnAddUser_Click(object sender, EventArgs e)
+        {
+            ExecuteInsert("INSERT INTO Users (Username, Password) VALUES (@v1, @v2)",
+                txtUName.Text, txtUPassword.Text, null, null);
+        }
         private void ExecuteInsert(string sql, string v1, string v2, string v3, string v4)
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@v1", v1); cmd.Parameters.AddWithValue("@v2", v2);
+                cmd.Parameters.AddWithValue("@v1", v1); 
+                if(v2 !=null)cmd.Parameters.AddWithValue("@v2", v2);
                 if (v3 != null) cmd.Parameters.AddWithValue("@v3", v3);
                 if (v4 != null) cmd.Parameters.AddWithValue("@v4", v4);
                 if (sql.Contains("@aid")) cmd.Parameters.AddWithValue("@aid", Session["ArtisanID"] ?? 1);

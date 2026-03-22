@@ -55,7 +55,7 @@
                             <div class="form-item"><label>Description</label><asp:TextBox ID="txtCDesc" runat="server" CssClass="form-ctrl" /></div>
                             <div class="form-item"><label>Category</label><asp:DropDownList ID="ddlCCat" runat="server" CssClass="form-ctrl" DataTextField="CategoryName" DataValueField="CategoryID" /></div>
                             <div class="form-item"><label>Pattern</label><asp:DropDownList ID="ddlCPat" runat="server" CssClass="form-ctrl" DataTextField="PatternName" DataValueField="PatternID" /></div>
-                            <asp:Button runat="server"  ID="btnadd" Text="Add Craft" OnClick="btnAddCraft_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
+                            <asp:Button runat="server" Text="Add Craft" OnClick="btnAddCraft_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
                         </div>
                     </asp:View>
 
@@ -64,7 +64,7 @@
                             <div class="form-item"><label>Full Name</label><asp:TextBox ID="txtAName" runat="server" CssClass="form-ctrl" /></div>
                             <div class="form-item"><label>Bio</label><asp:TextBox ID="txtABio" runat="server" CssClass="form-ctrl" /></div>
                             <div class="form-item"><label>Location</label><asp:TextBox ID="txtALoc" runat="server" CssClass="form-ctrl" /></div>
-                            <asp:Button runat="server"  ID="btnadd1" Text="Add Artisan" OnClick="btnAddArtisan_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
+                            <asp:Button runat="server"  Text="Add Artisan" OnClick="btnAddArtisan_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
                         </div>
                     </asp:View>
 
@@ -72,7 +72,23 @@
                         <div class="form-row">
                             <div class="form-item"><label>Pattern Name</label><asp:TextBox ID="txtPName" runat="server" CssClass="form-ctrl" /></div>
                             <div class="form-item"><label>Symbolism</label><asp:TextBox ID="txtPSym" runat="server" CssClass="form-ctrl" /></div>
-                            <asp:Button runat="server" ID="btnadd2" Text="Add Pattern" OnClick="btnAddPattern_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
+                            <asp:Button runat="server"  Text="Add Pattern" OnClick="btnAddPattern_Click" CssClass="nav-btn active" style="width:auto; height:36px;" />
+                        </div>
+                    </asp:View>
+
+
+                    <asp:View ID="vwAddCategory" runat="server">
+                        <div class="form-row">
+                            <div class="form-item"><label>Category Name</label><asp:TextBox ID="txtCatName" runat="server" CssClass="form-ctrl" /></div>
+                            <asp:Button runat="server" OnClick="btnAddCategory_Click" CssClass="nav-btn active"  style="width:auto; height:36px;" />
+                        </div>
+                    </asp:View>
+
+                    <asp:View ID="vwAddUsers" runat="server">
+                        <div class="form-row">
+                            <div class ="form-item"><label>Username</label><asp:TextBox ID="txtUName" runat="server" CssClass="form-ctrl" /></div>
+                            <div class="form-item"><label>Password</label><asp:TextBox ID="txtUPassword" runat="server" CssClass="form-ctrl" /></div>
+                            <asp:Button runat="server" Text="Add User" OnClick="btnAddUser_Click" CssClass="nav-btn active"  style="width:auto; height:36px;" />
                         </div>
                     </asp:View>
                 </asp:MultiView>
