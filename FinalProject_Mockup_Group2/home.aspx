@@ -2,16 +2,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <section class="page-header-section">
-        <div class ="home-hero-img-container" style="left: -50px; top: -55px; width: 106%">
-            <img src="images/main (2).jpg" alt="T'boli Craftsmanship" class="home-hero-img" style="float: left; left: -278px; top: -6px; width: 121%; margin-top: 0">
-        </div>
-        <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">Preserving Culture Through Craft</h1>
+   <section class="page-header-section">
+    <div class="parallax-js"></div>
+
+    <div class="hero-content">
+        <h1>Preserving Culture Through Craft</h1>
         <p>
             Discover handcrafted works created by the T'boli Indigenous artisan community. 
             Each piece represents generations of tradition, creativity, and cultural identity.
         </p>
-    </section>
+    </div>
+</section>
 
     <section class="home-about-section">
         <h2 class="home-section-title">About the Collective</h2>
@@ -64,4 +65,11 @@
         <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 25px;">Every craft helps sustain artisan communities and preserve cultural heritage.</p>
     </section>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.parallax-js');
+            let scrollPos = window.scrollY;
+            parallax.style.transform = `translateY(${scrollPos * 0.5}px)`;
+        });
+    </script>
 </asp:Content>
