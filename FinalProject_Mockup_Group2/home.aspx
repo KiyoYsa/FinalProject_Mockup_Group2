@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <section class="page-header-section">
-        <div class ="home-hero-img-container" style="left: -50px; top: -55px; width: 106%">
+        <div class ="home-hero-img-container" style="left: -50px; top: -55px; width: 104.7%">
             <img src="images/main (2).jpg" alt="T'boli Craftsmanship" class="home-hero-img" style="float: left; left: -278px; top: -6px; width: 121%; margin-top: 0">
         </div>
         <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">Preserving Culture Through Craft</h1>
