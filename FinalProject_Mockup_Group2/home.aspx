@@ -38,7 +38,7 @@
                 <img src="images/crafts.jpg" alt="Craft">
                 <h3 style="font-size: 1.2rem;">Crafts</h3>
                 <p>Discover traditional T'nalak weaving.</p>
-                <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Crafts</a></div>
+                <div style="padding: 0 20px 20px;"><a href="Crafts.aspx" class="btn-read">Discover Crafts</a></div>
             </div>
 
             <div class="home-grid-card">
